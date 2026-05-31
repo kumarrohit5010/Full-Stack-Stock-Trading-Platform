@@ -1,0 +1,160 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.nav-link{
+  margin-left:40px;
+}
+
+.nav-item :hover{
+  color:rgb(167, 167, 248);
+
+}
+
+.links a{
+  text-decoration: none;
+  opacity: 0.6;
+  color: black;
+
+}
+.media a{
+  opacity: 0.5;
+  color: black;
+}
+.media a:hover{
+  opacity: 1;
+}
+
+.hamBurgerMenu i{
+  opacity: 0.6;
+}
+.footer a{
+  text-decoration: none;
+  margin-left: 10px;
+  margin-bottom: 0px;
+  color: black;
+  opacity: 0.7;
+}
+.clrwhite{
+  color: white;
+  margin-right: 10px;
+  text-align: left;
+}
+.newmargin{
+  margin-bottom: 30px;
+}
+.clrwhiteh{
+  color: white;
+}
+.noline{
+  text-decoration: none;
+}
+.ticket{
+  line-height: 2;
+}
+
+.support-search {
+  width: 90%;
+  min-height: 55px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: none;
+}
+
+.support-hero-title {
+  line-height: 1.4;
+}
+
+.support-ticket-title {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.hero-action-btn {
+  width: min(100%, 280px);
+  display: block;
+  margin: 0 auto;
+}
+
+.responsive-media {
+  width: min(100%, 320px);
+}
+
+.responsive-media-small {
+  width: min(100%, 180px);
+}
+
+.responsive-media-medium {
+  width: min(100%, 220px);
+}
+
+.universe-title {
+  line-height: 1.35;
+}
+
+/* Responsive helpers */
+@media (max-width: 1024px) {
+  .nav-link{ margin-left: 18px; }
+  .links a{ opacity: 0.85; }
+  .hamBurgerMenu { display: block; }
+}
+
+@media (max-width: 768px) {
+  .nav-link{ margin-left: 12px; font-size: 0.95rem; }
+  .links a{ font-size: 0.95rem; }
+  .footer a{ margin-left: 6px; }
+  .row > [class*='col-'] {
+    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .support-search { width: 100%; }
+  .support-hero-side { text-align: left !important; }
+  .support-ticket-title { margin-left: 0 !important; }
+}
+
+@media (max-width: 520px) {
+  .container { padding-left: 1rem; padding-right: 1rem; }
+  .row { margin-left: 0; margin-right: 0; }
+  .row > [class*='col-'] {
+    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .navbar .container { flex-wrap: wrap; align-items: center; }
+  .navbar-toggler { margin-left: auto; border: none; background: transparent; }
+  .navbar-collapse { display: none !important; width: 100%; }
+  .navbar-collapse.show { display: flex !important; flex-direction: column; align-items: flex-start; }
+  .navbar-nav { width: 100%; padding: 0.5rem 0; }
+  .nav-link{ margin-left: 0; display: block; padding-left: 0; }
+  .hamBurgerMenu i{ font-size: 20px; }
+  .links a{ display: block; margin: 6px 0; }
+  .media a{ display: inline-block; margin-right: 8px; }
+  .footer a { margin-left: 0; margin-right: 10px; display: inline-block; }
+  .ticket { line-height: 1.8; }
+  .hero-action-btn { width: 100%; max-width: 320px; }
+  .auth-card { max-width: 100%; }
+  .support-search { width: 100%; }
+  .support-hero-main, .support-hero-side { padding-left: 0; padding-right: 0; }
+  .support-ticket-title { font-size: 1.4rem; margin-left: 0 !important; }
+}
