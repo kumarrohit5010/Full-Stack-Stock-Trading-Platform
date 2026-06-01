@@ -17,10 +17,8 @@ const mongoose =require("mongoose");
 const app=express();
 
 const allowedOrigins = [
-  "http://localhost:3000",
-  "http://localhost:3001",
-  "http://localhost:3003",
-  "http://localhost:5173",
+  "https://full-stack-stock-trading-platform-steel.vercel.app",
+  "https://full-stack-stock-trading-platform-r.vercel.app",
 ];
 
 app.use(cors({
