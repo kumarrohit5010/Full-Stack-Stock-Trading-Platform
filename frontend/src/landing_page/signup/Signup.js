@@ -3,15 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "../Auth.css";
-
-const LOCAL_API_BASE_URL = "http://localhost:3002";
-
-const API_BASE_URL =
-  typeof window !== "undefined" &&
-  (window.location.hostname === "localhost" ||
-    window.location.hostname === "127.0.0.1")
-    ? LOCAL_API_BASE_URL
-    : process.env.REACT_APP_API_URL || LOCAL_API_BASE_URL;
+import API_BASE_URL from "../../config";
 
 const initialFormValues = {
   firstName: "",
