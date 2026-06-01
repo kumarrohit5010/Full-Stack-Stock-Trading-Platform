@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
-import { loginUser } from "../api/auth";
+import { loginUser } from "../../api/auth";
 import "../Auth.css";
 
 const DASHBOARD_URL =
-  import.meta.env.VITE_DASHBOARD_URL;
+  process.env.REACT_APP_DASHBOARD_URL || "http://localhost:3001";
 
 const Login = () => {
   const [inputValue, setInputValue] = useState({

@@ -18,7 +18,7 @@ const app=express();
 
 const allowedOrigins = [
   "https://full-stack-stock-trading-platform-steel.vercel.app",
-  "https://full-stack-stock-trading-platform-r.vercel.app",
+  "https://full-stack-stock-trading-platform-eta.vercel.app/",
 ];
 
 app.use(cors({

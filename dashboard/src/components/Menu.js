@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 import axios from "axios";
 import UserContext from "./UserContext";
 import API_BASE_URL from "../config";
-const LOGIN_URL = import.meta.env.VITE_LOGIN_URL || "http://localhost:3000/login";
+const LOGIN_URL = process.env.REACT_APP_LOGIN_URL || "http://localhost:3000/login";
 
 const Menu = () => {
   const { user } = useContext(UserContext);
